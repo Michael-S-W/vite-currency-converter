@@ -1,0 +1,48 @@
+[data-theme="dark"] {
+  --color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+}
+[data-theme="light"] {
+  --background-color: rgba(255, 255, 255, 0.87);
+  --color: #242424;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--color);
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+.currenciesList {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 150px);
+}
+.currenciesList li {
+  text-align: left;
+}
+button {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  font-size: 16px;
+  top: 0;
+  left: 100%;
+  transform: translate(-100%, 0%);
+  background-color: var(--background-color);
+  color: var(--color);
+  border: transparent;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
