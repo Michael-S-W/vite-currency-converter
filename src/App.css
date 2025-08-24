@@ -38,11 +38,13 @@ h1 {
 }
 li {
   list-style-type: none;
+  border: 1px solid var(--color);
+  padding: 3px;
 }
 .currenciesList {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
 }
 .currenciesList li {
   text-align: left;
